@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+/* Global resets for Clean Minimalism */
+html, body {
+  background-color: #0A0A0B !important;
+  color: #E0E0E1 !important;
+  font-family: "Inter", "Space Grotesk", sans-serif;
+}
+
+/* Override standard Tailwind classes for backgrounds */
+.bg-gray-50, 
+.bg-zinc-50, 
+.bg-slate-50, 
+.bg-gray-100, 
+.bg-zinc-100,
+.bg-slate-100,
+.bg-[#f9fafb],
+.bg-neutral-50,
+.bg-neutral-100 {
+  background-color: #0A0A0B !important;
+}
+
+/* Cards & Sections */
+.bg-white,
+.bg-slate-50\/50,
+.bg-gray-50\/50,
+.bg-zinc-50\/50,
+.dark\:bg-gray-900\/60,
+.dark\:bg-gray-900,
+.dark\:bg-gray-950,
+.bg-zinc-900,
+.bg-slate-900 {
+  background-color: #151518 !important;
+}
+
+/* Sidebar and submenus */
+aside, 
+.bg-gray-900, 
+.bg-zinc-900, 
+.bg-[#121214] {
+  background-color: #0F0F12 !important;
+}
+
+/* Headers & Footers */
+header, 
+footer,
+.bg-gray-100\/80,
+.bg-[#111114] {
+  background-color: #111114 !important;
+}
+
+/* Inputs & Forms */
+input, 
+select, 
+textarea {
+  background-color: #0F0F12 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #FFFFFF !important;
+}
+
+input:focus, 
+select:focus, 
+textarea:focus {
+  border-color: #06b6d4 !important;
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.2) !important;
+}
+
+/* Buttons and accents mapping */
+.bg-emerald-600, 
+.bg-emerald-500, 
+.bg-teal-600, 
+.bg-teal-500, 
+.bg-indigo-600, 
+.bg-indigo-500 {
+  background-color: #06b6d4 !important;
+  color: #FFFFFF !important;
+}
+
+.hover\:bg-emerald-700:hover, 
+.hover\:bg-emerald-600:hover, 
+.hover\:bg-teal-700:hover, 
+.hover\:bg-teal-600:hover,
+.hover\:bg-indigo-700:hover {
+  background-color: #0891b2 !important;
+}
+
+/* Texts and icons */
+.text-emerald-600, 
+.text-emerald-500, 
+.text-teal-600, 
+.text-teal-500, 
+.text-indigo-600, 
+.text-indigo-500,
+.text-emerald-400,
+.text-teal-400,
+.text-indigo-400 {
+  color: #22d3ee !important;
+}
+
+/* Light opacity backgrounds */
+.bg-emerald-50, 
+.bg-teal-50, 
+.bg-indigo-50, 
+.bg-emerald-500\/10, 
+.bg-teal-500\/10, 
+.bg-indigo-500\/10,
+.dark\:bg-emerald-950\/40,
+.dark\:bg-indigo-950\/40,
+.dark\:bg-teal-950\/40 {
+  background-color: rgba(6, 182, 212, 0.08) !important;
+  color: #22d3ee !important;
+}
+
+/* Borders general */
+.border,
+.border-gray-100, 
+.border-gray-200, 
+.border-gray-300, 
+.border-zinc-100, 
+.border-zinc-200, 
+.border-slate-200, 
+.border-gray-850,
+.dark\:border-gray-800,
+.dark\:border-gray-850 {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Custom badges */
+span.bg-emerald-100, 
+span.bg-teal-100, 
+span.bg-indigo-100 {
+  background-color: rgba(6, 182, 212, 0.1) !important;
+  color: #22d3ee !important;
+  border: 1px solid rgba(6, 182, 212, 0.2) !important;
+}
+
+/* Fix text contrast in light-mode elements */
+.text-gray-900,
+.text-gray-800,
+.text-slate-900,
+.text-zinc-900 {
+  color: #E0E0E1 !important;
+}
+
+.text-gray-600,
+.text-gray-500,
+.text-slate-600,
+.text-zinc-500 {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.text-gray-400,
+.text-slate-400,
+.text-zinc-400 {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Table styling overrides */
+th, td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Progress bars */
+.bg-gray-200 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Hover background lists */
+.hover\:bg-gray-50:hover,
+.hover\:bg-zinc-50:hover,
+.hover\:bg-slate-50:hover,
+.dark\/hover\:bg-gray-850\/30:hover {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+}
+
+/* Scrollbars custom minimalist look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0B;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 182, 212, 0.5);
+}

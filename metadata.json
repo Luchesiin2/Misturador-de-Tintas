@@ -1,0 +1,6 @@
+{
+  "name": "Central de Pintura 3D",
+  "description": "Plataforma completa para pintores de miniaturas, action figures, estátuas e peças impressas em 3D. Inclui geradores de paletas, simulador de misturas por porcentagem e gotas, guia para iniciantes, biblioteca de cores, catálogo de receitas, comparadores e fichas de pintura.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
